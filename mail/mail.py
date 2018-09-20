@@ -155,20 +155,19 @@ def c_msg(From, To_s, subject, main_text, method = 'plain', attachments = []):
     return msg
 
 if __name__ == '__main__':
-    print "connect to server ..."
+    #print "connect to server ..."
     #server = connect('smtp.office365.com', 587, True)
-    server = connect('smtp.genomics.cn', 587, True)
-    if not server[0]:
-        exit(159)
-    print "login ..."
+    #server = connect('smtp.genomics.cn', 587, True)
+    #if not server[0]:
+    #    exit(159)
+    #print "login ..."
     #(s,d) = login(server[2],'chenshihong@genomics.cn','qwerty123456!')
-    (s,d) = login(server[2],'bgi-Biosyn@genomics.cn','Synbio123456')
-    print (s,d)
-    if not s:
-        exit(162)
-    print "sending test mail ..."
-    msg = c_msg('Administrator<bgi-Biosyn@genomics.cn>',['Shihong Chen<chenshihong@genomics.cn>'],'Test for sending email from python',['As the subject',None],'plain',[])
-    print msg
-    sendmail(server[2],'bgi-Biosyn@genomics.cn',['chenshihong@genomics.cn'],msg.as_string())
-    server[2].quit()
-
+    #(s,d) = login(server[2],'bgi-Biosyn@genomics.cn','Synbio123456')
+    #print (s,d)
+    #if not s:
+    #    exit(162)
+    #print "sending test mail ..."
+    #msg = c_msg('Administrator<bgi-Biosyn@genomics.cn>',['Shihong Chen<chenshihong@genomics.cn>'],'Test for sending email from python',['As the subject',None],'plain',[])
+    #print msg
+    #sendmail(server[2],'bgi-Biosyn@genomics.cn',['chenshihong@genomics.cn'],msg.as_string())
+    #server[2].quit()
